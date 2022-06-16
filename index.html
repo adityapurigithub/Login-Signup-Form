@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<title>Login/Signup</title>
+</head>
+<body>
+	<div class="wrapper">
+		<div class="title-text">
+			<div class="title login">LOGIN</div>
+			<div class="title signup">SIGN UP</div>
+		</div>
+		<div class="form-container">
+			<div class="slide-controls">
+				<input type="radio" name="slider" id="login" checked>
+				<input type="radio" name="slider" id="signup">
+				<label class="slide login" for="login">Login</label> 
+				<label class="slide signup" for="signup">Signup</label>
+				<div class="slide-tab"></div>  		
+			</div>
+
+			<div class="form-inner">
+				<form class="login" action="#">
+					<div class="field">
+						<input type="text" placeholder="Email Address">
+					</div>
+					<div class="field">
+						<input type="password" placeholder="Password">
+					</div>
+					<div class="pass-reset-link">
+						<a href="#">Forget Password?</a>
+					</div>
+					<div class="field">
+						<input type="submit" value="Login">
+					</div>
+					<div class="signup-link">
+						Not Registered?
+						<a href="#"> Signup </a>
+						Now
+					</div>
+				</form>
+
+				<form class="signup" action="#">
+					<div class="field">
+						<input type="text" placeholder="Email Address">
+					</div>
+					<div class="field">
+						<input type="password" placeholder="Password">
+					</div>
+					<div class="field">
+						<input type="password" placeholder="Confirm Password">
+					</div>
+					<div class="field">
+						<input type="submit" value="Signup">
+					</div>
+					
+				</form>
+			</div>
+		</div>
+	</div>
+
+	<script type="text/javascript" src="script.js"></script>
+</body>
+</html>

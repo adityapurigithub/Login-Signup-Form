@@ -1,0 +1,132 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	text-decoration: none;
+}
+body,html{  /* a best way to center the containers.... */
+	width: 100%;
+	height: 100%;
+	display: grid;
+	place-items: center;
+	background: -webkit-linear-gradient(left,#a445b2,#fa4299);
+}
+.wrapper{
+	max-width: 400px;
+	background: #fff;
+	padding: 30px;
+	border-radius: 10px;
+	box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.2);
+	overflow: hidden;
+}
+.wrapper .title-text{
+	width: 200%;
+	display: flex;
+	justify-content: space-around;
+	margin-bottom: 10px;
+}
+.wrapper .title-text .title{
+	width: 100%;
+	font-size: 2rem;
+	font-weight: 600;
+	text-align: center;
+	transition: all 0.3s ease;
+
+}
+.wrapper .form-container{
+	width: 100%;
+	overflow: hidden;
+}
+.form-container .form-inner{
+	display: flex;
+	width: 200%;
+}
+.form-container .slide-controls{
+	display: flex;
+	justify-content: space-between;
+	width: 100%;
+	border: 1px solid lightgray;
+	border-radius: 10px;
+	padding: 7px;
+	margin-bottom: 5px;
+	position: relative;
+}
+.slide-controls .slide{
+	cursor: pointer;
+	width: 100%;
+	text-align: center;
+	z-index: 1;
+	color: #fff;
+	transition: all 0.4s ease;
+}
+.slide-controls .signup{
+	color: black;
+}
+.slide-controls .slide-tab{
+	height: 100%;
+	width: 50%;
+	position: absolute;
+	border-radius: 10px;
+	top: 0;
+	left: 0;
+	z-index: 0;
+	background: -webkit-linear-gradient(left,#a445b2,#fa4299);
+	transition: all 0.3s ease;
+}
+/*giving display none to input[type="radio"] to not show these radio btn*/
+input[type="radio"]{
+	display: none;
+}
+
+/*if input-radio with id signup is checked then .slide-tab to left 50%*/
+#signup:checked ~ .slide-tab{
+	left: 50%;
+	color: white;
+}
+#signup:checked ~ .login{
+	color: black;
+}
+#signup:checked ~ .signup{
+	color: white;
+}
+.form-container .form-inner form{
+	width: 50%;
+	transition: all 0.3s ease;
+}
+.form-inner form .field{
+	width: 100%;
+	padding: 6px;
+}
+.field input{
+	width: 100%;
+	height: 35px;
+	padding-left: 10px;
+	border: none;
+	outline: none;
+	border: 1px solid lightgrey;
+	border-radius: 5px;
+}
+form .pass-reset-link{
+	font-size: 1.1rem;
+	padding: 2px;
+	padding-left:12px ;
+	text-decoration: none;
+	margin-bottom: 10px;
+}
+form .signup-link{
+	font-size: 1.1rem;
+	padding: 2px;
+	text-align: center;
+	text-decoration: none;
+
+}
+form .pass-reset-link a:hover,form .signup-link a:hover{
+	text-decoration: underline;
+	color: darkmagenta;
+}
+.field input[type="submit"]{
+	color: white;
+	background: -webkit-linear-gradient(left,#a445b2,#fa4299);
+	cursor: pointer;
+
+}
